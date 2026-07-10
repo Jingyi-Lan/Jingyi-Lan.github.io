@@ -6,8 +6,34 @@ A clean static academic homepage prepared for GitHub Pages.
 
 - `index.html`: homepage content and link placeholders
 - `styles.css`: visual design
-- `assets/`: put downloadable files here, such as `Jingyi_Lan_CV.pdf`
+- `assets/`: put downloadable files and images here
 - `.nojekyll`: tells GitHub Pages to serve files directly without Jekyll processing
+
+## Add your profile photo
+
+Save your photo as:
+
+```text
+assets/profile.jpg
+```
+
+Recommended photo format:
+
+```text
+square image, at least 800 × 800 px
+```
+
+If your image has another filename, update this line in `index.html`:
+
+```html
+<img src="assets/profile.jpg" alt="Portrait of Jingyi Lan" />
+```
+
+For example:
+
+```html
+<img src="assets/jingyi-lan.jpg" alt="Portrait of Jingyi Lan" />
+```
 
 ## How to edit links
 
@@ -37,14 +63,3 @@ assets/Jingyi_Lan_CV.pdf
 4. Under `Build and deployment`, choose `Deploy from a branch`.
 5. Choose `main` and `/root`, then save.
 6. Visit `https://<your-github-username>.github.io` after GitHub finishes deployment.
-
-## Command-line deployment
-
-```bash
-git init
-git add .
-git commit -m "Add personal homepage"
-git branch -M main
-git remote add origin https://github.com/<your-github-username>/<your-github-username>.github.io.git
-git push -u origin main
-```

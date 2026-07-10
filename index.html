@@ -22,6 +22,25 @@
 
   <main id="top">
     <section class="hero section">
+      <div class="photo-card" aria-label="Profile photo">
+        <div class="photo-frame">
+          <!--
+            Put your photo at assets/profile.jpg.
+            Recommended size: square image, at least 800 × 800 px.
+            If you use another filename, update the src below.
+          -->
+          <img
+            src="assets/profile.jpg"
+            alt="Portrait of Jingyi Lan"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+          />
+          <div class="photo-placeholder" aria-hidden="true">
+            <span>Photo</span>
+            <small>assets/profile.jpg</small>
+          </div>
+        </div>
+      </div>
+
       <div class="hero-copy">
         <p class="eyebrow">PhD Student · Tsinghua University</p>
         <h1>Jingyi Lan <span lang="zh-CN">蓝静怡</span></h1>
@@ -30,6 +49,10 @@
           Tsinghua University. My research focuses on network measurements and
           space-integrated-ground networks.
         </p>
+        <div class="hero-meta" aria-label="Profile summary">
+          <span>Beijing, China</span>
+          <span>Advisor: <a href="http://www.yuanjiel.com">Prof. Yuanjie Li</a></span>
+        </div>
         <div class="actions" aria-label="Profile links">
           <a class="button primary" href="mailto:lanjy23@mails.tsinghua.edu.cn">Email</a>
           <!-- Put your latest CV PDF at assets/Jingyi_Lan_CV.pdf, then keep this link. -->
@@ -39,28 +62,10 @@
           <a class="button" href="#">GitHub</a>
         </div>
       </div>
-
-      <aside class="profile-card" aria-label="Profile summary">
-        <div class="avatar" aria-hidden="true">JL</div>
-        <dl>
-          <div>
-            <dt>Affiliation</dt>
-            <dd>Institute for Network Sciences and Cyberspace, Tsinghua University</dd>
-          </div>
-          <div>
-            <dt>Location</dt>
-            <dd>Beijing, China</dd>
-          </div>
-          <div>
-            <dt>Advisor</dt>
-            <dd><a href="http://www.yuanjiel.com">Prof. Yuanjie Li</a></dd>
-          </div>
-        </dl>
-      </aside>
     </section>
 
-    <section id="research" class="section two-column">
-      <div>
+    <section id="research" class="section section-block">
+      <div class="section-heading">
         <p class="section-kicker">Research</p>
         <h2>Research interests</h2>
       </div>
@@ -79,8 +84,8 @@
       </div>
     </section>
 
-    <section id="education" class="section two-column">
-      <div>
+    <section id="education" class="section section-block">
+      <div class="section-heading">
         <p class="section-kicker">Education</p>
         <h2>Academic background</h2>
       </div>
@@ -104,8 +109,8 @@
       </div>
     </section>
 
-    <section id="publications" class="section two-column">
-      <div>
+    <section id="publications" class="section section-block">
+      <div class="section-heading">
         <p class="section-kicker">Publications</p>
         <h2>Selected papers</h2>
         <p class="helper">
@@ -172,8 +177,8 @@
       </div>
     </section>
 
-    <section id="software" class="section two-column">
-      <div>
+    <section id="software" class="section section-block">
+      <div class="section-heading">
         <p class="section-kicker">Software</p>
         <h2>Open-source software</h2>
       </div>
@@ -187,8 +192,8 @@
       </div>
     </section>
 
-    <section id="awards" class="section two-column">
-      <div>
+    <section id="awards" class="section section-block">
+      <div class="section-heading">
         <p class="section-kicker">Awards</p>
         <h2>Honors</h2>
       </div>
