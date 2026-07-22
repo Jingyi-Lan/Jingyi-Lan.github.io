@@ -1,1 +1,1 @@
-# Jingyi Lan personal homepage
+Jingyi-Lan.github.io
