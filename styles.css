@@ -275,6 +275,11 @@ code {
   padding: 26px;
 }
 
+.software-list {
+  display: grid;
+  gap: 16px;
+}
+
 .content-card p:last-child,
 .publication p:last-child {
   margin-bottom: 0;
