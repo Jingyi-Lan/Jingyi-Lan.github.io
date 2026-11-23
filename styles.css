@@ -275,7 +275,8 @@ code {
   padding: 26px;
 }
 
-.software-list {
+.software-list,
+.service-list {
   display: grid;
   gap: 16px;
 }
