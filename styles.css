@@ -265,8 +265,7 @@ code {
   padding: 26px;
 }
 
-.software-list,
-.service-list {
+.software-list {
   display: grid;
   gap: 16px;
 }
@@ -328,6 +327,34 @@ code {
   white-space: nowrap;
 }
 
+.teaching-list {
+  gap: 0;
+}
+
+.teaching-list .item {
+  padding: 14px 0;
+}
+
+.teaching-list .item:first-child {
+  padding-top: 0;
+}
+
+.teaching-list .item:last-child {
+  padding-bottom: 0;
+}
+
+.teaching-list h3 {
+  margin-bottom: 4px;
+}
+
+.teaching-list .item-main p {
+  margin-bottom: 2px;
+}
+
+.teaching-list .item-main p:last-child {
+  margin-bottom: 0;
+}
+
 .publication-list {
   display: grid;
   gap: 16px;
@@ -380,7 +407,8 @@ code {
   border-bottom: 0;
 }
 
-.award time {
+.award time,
+.award-role {
   color: var(--muted);
   white-space: nowrap;
 }
@@ -437,7 +465,8 @@ code {
   }
 
   .item-date,
-  .award time {
+  .award time,
+  .award-role {
     display: block;
     margin-top: 8px;
   }
